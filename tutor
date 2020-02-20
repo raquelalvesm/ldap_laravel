@@ -1,0 +1,25 @@
+
+
+
+
+composer create-project laravel/laravel laravel-simple-ldap-auth
+cd laravel-simple-ldap-auth
+composer require adldap2/adldap2-laravel
+composer require laravel/ui
+php artisan ui vue --auth
+npm install && npm run dev
+
+php artisan serve
+
+
+php artisan key:generate
+php artisan config:cache
+
+
+ldap
+
+
+sudo nano /etc/php/7.2/cli/php.ini 
+---tirar ; extensions=pdo_sqlite
+sudo apt install php7.2-sqlite3
+
